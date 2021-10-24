@@ -5,7 +5,7 @@ const port = 5000 // 포트는 5000번을 백서버로 둔다
 
 
 // const mongoose = require('mongoose') // MongoDB 연결
-// mongoose.connect('mongodb+srv://heeyeon:비밀번호자리><@boilerplate.qrbid.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
+// mongoose.connect('mongodb+srv://heeyeon:비밀번호자리@boilerplate.qrbid.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
 //      useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false
 // }).then(() => console.log('MongoDB Connected...'))
 //     .catch(err => console.log(err))
@@ -13,7 +13,7 @@ const port = 5000 // 포트는 5000번을 백서버로 둔다
 // 기억하고 실행하기 때문에 더이상 지원하지 않는다
 
     const mongoose = require('mongoose') // MongoDB 연결
-    mongoose.connect('mongodb+srv://heeyeon:비밀번호자리><@boilerplate.qrbid.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
+    mongoose.connect('mongodb+srv://heeyeon:비밀번호자리@boilerplate.qrbid.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
     .then(() => console.log('MongoDB Connected...'))
     .catch(err => console.log(err))
 
