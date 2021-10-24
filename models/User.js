@@ -14,6 +14,10 @@ const userSchema = mongoose.Schema({
         type: String,
         maxlength: 50
     },
+    lastname:{
+        type: String,
+        maxlength: 50
+    },
     role: { //유저에게 관리자권한 부여
         type: Number, // 0이면 일반유저, 1이면 관리자
         default: 0 // 임의로 role을 지정하지 않으면 기본값 0으로 설정
