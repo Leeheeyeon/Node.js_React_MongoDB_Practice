@@ -26,7 +26,7 @@ app.use(bodyParser.json()); // application/json 타입으로 된 것을 분석�
 
 
 
-app.get('/', (req, res) => res.send('희연이네'))
+app.get('/', (req, res) => res.send('🐤🐥킹드몬,, 바로 적용되네,, 대박인데~'))
 // express app의 루트디렉토리('/')에 Hello World를 출력해줌
 
 
