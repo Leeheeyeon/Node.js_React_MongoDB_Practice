@@ -5,9 +5,21 @@ const port = 5000 // 포트는 5000번을 백서버로 둔다
 const bodyParser = require('body-parser'); 
 const { User } = require("./models/User"); // model인 User를 사용하기위해 가져옴
 
+
+const config = require('./config/key');
+
+
+
+
+
+
+
+
 // bodyParser를 사용하기 위한 옵션 설정
 app.use(bodyParser.urlencoded({extended: true})); // application/x--www-form-urlencoded 타입을 분석해서 가져와줌
 app.use(bodyParser.json()); // application/json 타입으로 된 것을 분석해서 가져와줌
+
+
 
 
 // const mongoose = require('mongoose') // MongoDB 연결
@@ -19,7 +31,7 @@ app.use(bodyParser.json()); // application/json 타입으로 된 것을 분석�
 // 기억하고 실행하기 때문에 더이상 지원하지 않는다
 
     const mongoose = require('mongoose') // MongoDB 연결
-    mongoose.connect('mongodb+srv://heeyeon:비번자리임@boilerplate.qrbid.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
+    mongoose.connect(config.mongoURI)
     .then(() => console.log('MongoDB Connected...'))
     .catch(err => console.log(err))
 
